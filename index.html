@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+      <!-- Nevigation bar  -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#register">Register Student</a></li>
+            <li><a href="#students">Registered Students</a></li>
+        </ul>
+    </nav>
+
+    <!-- End Nevigation bar  -->
+
+
+     <!-- Header section -->
+    <header id="home">
+        <h1>Student Registration System</h1>
+        <p>Register student details and manage records efficiently</p>
+    </header>
+    <!-- End Header section -->
+    
+
+    <!-- Register student section -->
+    <section id="register">
+        <!-- <h1><span>R</span>egister <span>S</span>tudent</h1> -->
+        <h1><span>S</span>tudent <span>R</span>egistration <span>F</span>orm</h1>
+        <form id="student-form">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" required pattern="[A-Za-z ]+" title="Only characters allowed">
+
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required>
+
+            <label for="contact">Contact No:</label>
+            <input type="number" id="contact" required>
+
+            <button type="submit" id="submit-btn">Add Student</button>
+        </form>
+    </section>
+     <!-- End Register student section -->
+
+
+    <!-- Registered students section -->
+    <section id="students">
+        <h1><span>R</span>egistered <span>S</span>tudents</h1>
+        <div id="table-wrapper">
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list"></tbody>
+            </table>
+        </div>
+        
+        
+    </section>
+    <!-- End Registered students section -->
+
+
+
+     <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Student Registration System by  Harshal . All Rights Reserved. </p>
+    <div class="social-links">
+        <p>Follow us:</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/harshal-chavhan-95ab4a244/">
+                <img src="https://img.icons8.com/?size=48&id=kFJzAZryEscq&format=gif" />
+            </a>  
+            <a href="https://x.com/harshaal018">
+                <img src="https://img.icons8.com/?size=48&id=xWVjuc9hryql&format=gif" />
+            </a>  
+            <a href="https://github.com/harshal1800">
+                <img src="https://img.icons8.com/?size=48&id=akG4VRhAoSii&format=gif" />
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- End Footer section -->
+
+<script src="script.js"></script>
+   
+</body>
+</html>
+
+
